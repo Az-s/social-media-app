@@ -17,7 +17,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
   return (
     <GoogleOAuthProvider
-      clientId={process.env.NEXT_PUBLIC_GOOGLE_API_TOKEN}
+      clientId='1051467674151-p9chm1pbgs1dle70d087f30mfban6q2u.apps.googleusercontent.com'
       // clientId={`${process.env.NEXT_PUBLIC_GOOGLE_API_TOKEN}`}
     >
       <Navbar />
