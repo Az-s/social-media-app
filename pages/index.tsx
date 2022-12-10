@@ -9,7 +9,7 @@ interface IProps {
 }
 
 const Home = ({ videos }: IProps) => {
-  return (
+         return (
     <h1 className="flex flex-col gap-10 videos h-full">
       {videos.length ? (
         videos.map((video : Video) => (
