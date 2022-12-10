@@ -38,16 +38,6 @@ const Sidebar = () => {
               </div>
             </Link>
           </div>
-          {!userProfile && (
-            <div className="px-2 py-4 hidden xl:block">
-              <p className="text-gray-400">Log in</p>
-              <div className="pr-4">
-                <button className="bg-white text-lg cursor-pointer border-[1px] font-semibold px-6 py-3 rounded-md outline-none w-full mt-3 hover:bg-[#66686b] hover:text-white">
-                  Log in
-                </button>
-              </div>
-            </div>
-          )}
           <Discover />
           <SuggestedAccounts />
           <Footer />
