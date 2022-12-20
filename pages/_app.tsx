@@ -17,16 +17,18 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
   return (
     <GoogleOAuthProvider
-      clientId='1051467674151-p9chm1pbgs1dle70d087f30mfban6q2u.apps.googleusercontent.com'
+      clientId="1051467674151-p9chm1pbgs1dle70d087f30mfban6q2u.apps.googleusercontent.com"
       // clientId={`${process.env.NEXT_PUBLIC_GOOGLE_API_TOKEN}`}
     >
-      <Navbar />
-      <div className="flex gap-6 md:gap-20">
-        <div className="h-[92vh] overflow-hidden xl:hover:overflow-auto">
-          <Sidebar />
-        </div>
-        <div className="m-4 flex flex-col gap-10 overflow-auto h-[88vh] videos flex-1">
-          <Component {...pageProps} />
+      <div className="xl:w-[1200px] m-auto overflow-hidden h-[100vh]">
+        <Navbar />
+        <div className="flex gap-6 md:gap-20">
+          <div className="h-[92vh] overflow-hidden xl:hover:overflow-auto">
+            <Sidebar />
+          </div>
+          <div className="m-4 flex flex-col gap-10 overflow-auto h-[88vh] videos flex-1 scrollbar-hide">
+            <Component {...pageProps} />
+          </div>
         </div>
       </div>
     </GoogleOAuthProvider>
